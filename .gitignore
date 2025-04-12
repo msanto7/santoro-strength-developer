@@ -8,3 +8,5 @@ bin/
 obj/
 *.user
 *.suo
+/StrengthPortal/StrengthPortal.Database/StrengthPortal.Database.dbmdl
+/StrengthPortal/StrengthPortal.Database/StrengthPortal.Database.jfm
