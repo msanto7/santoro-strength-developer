@@ -11,6 +11,15 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+# Check if .env file exists
+if (-not (Test-Path ".env")) {
+    Write-Host "❌ Missing .env file!" -ForegroundColor Red
+    Write-Host "Please copy .env.template to .env and configure your passwords:" -ForegroundColor Yellow
+    Write-Host "   Copy-Item .env.template .env" -ForegroundColor Cyan
+    Write-Host "Then edit .env with secure passwords before running Docker commands." -ForegroundColor Yellow
+    exit 1
+}
+
 Write-Host "StrengthPortal Docker Management" -ForegroundColor Green
 Write-Host "================================" -ForegroundColor Green
 

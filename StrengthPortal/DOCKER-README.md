@@ -8,6 +8,23 @@ This document explains how to run the StrengthPortal application using Docker an
 - Visual Studio Code (optional, for dev container)
 - PowerShell (for management scripts)
 
+## ⚠️ **Important: Environment Setup**
+
+**Before starting, you must set up your environment file:**
+
+1. **Copy the template:**
+   ```powershell
+   Copy-Item .env.template .env
+   ```
+
+2. **Edit `.env` and change the default password:**
+   ```properties
+   SA_PASSWORD=YourSecurePassword123!
+   ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=StrengthPortal;User Id=sa;Password=YourSecurePassword123!;TrustServerCertificate=true;
+   ```
+
+3. **Never commit the `.env` file** - it's already in `.gitignore`
+
 ## Quick Start
 
 ### Option 1: Using Docker Compose (Recommended for local development)
@@ -157,6 +174,20 @@ Key environment variables (defined in `.env`):
 - `SA_PASSWORD`: SQL Server SA password
 - `ASPNETCORE_ENVIRONMENT`: ASP.NET Core environment
 - `ConnectionStrings__DefaultConnection`: Database connection string
+
+**🔒 Security Note:** The `.env` file contains sensitive information and should never be committed to Git. Use `.env.template` as a starting point and create your own `.env` file locally.
+
+## Team Setup
+
+**For new team members:**
+
+1. **Clone the repository**
+2. **Set up environment:**
+   ```powershell
+   Copy-Item .env.template .env
+   # Edit .env with secure passwords
+   ```
+3. **Follow the Quick Start guide above**
 
 ## Next Steps
 
