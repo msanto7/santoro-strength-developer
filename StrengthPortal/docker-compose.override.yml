@@ -7,13 +7,11 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=true
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=false
     volumes:
-      - ./StrengthPortal.Api:/app/source:cached
-      - /app/source/bin
-      - /app/source/obj
+      - ./StrengthPortal.Api:/source:cached
     ports:
       - "8080:8080"
       - "8081:8081"  # HTTPS port for development
-    command: ["dotnet", "watch", "run", "--project", "/app/source", "--urls", "http://+:8080"]
+    command: ["dotnet", "watch", "run", "--urls", "http://+:8080"]
 
   sqlserver:
     ports:
