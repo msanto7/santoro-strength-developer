@@ -1,8 +1,5 @@
-version: '3.8'
-
 services:
   api:
     volumes:
       - ..:/workspace:cached
     command: sleep infinity
-    user: vscode
