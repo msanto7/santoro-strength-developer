@@ -1,0 +1,6 @@
+@StrengthPortal.Identity_HostAddress = http://localhost:5126
+
+GET {{StrengthPortal.Identity_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

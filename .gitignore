@@ -16,6 +16,11 @@ obj/
 **/.env.local
 **/.env.*.local
 
+# Configuration files with secrets
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings.*.local.json
+
 # Docker
 **/docker-compose.override.yml.local
 **/.dockerignore.local

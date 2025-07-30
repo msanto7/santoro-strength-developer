@@ -6,6 +6,6 @@
     }
   },
   "ConnectionStrings": {
-    "DefaultConnection": "Server=sqlserver;Database=StrengthPortal;User Id=sa;Password=strengthROOT42!;TrustServerCertificate=True;"
+    "DefaultConnection": "Server=sqlserver;Database=StrengthPortal;User Id=sa;Password=YOUR_PASSWORD_HERE;TrustServerCertificate=True;"
   }
 }

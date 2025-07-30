@@ -10,20 +10,24 @@ This document explains how to run the StrengthPortal application using Docker an
 
 ## ⚠️ **Important: Environment Setup**
 
-**Before starting, you must set up your environment file:**
+**Before starting, you must set up your configuration files:**
 
-1. **Copy the template:**
+1. **Copy environment template:**
    ```powershell
    Copy-Item .env.template .env
    ```
 
-2. **Edit `.env` and change the default password:**
-   ```properties
-   SA_PASSWORD=YourSecurePassword123!
-   ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=StrengthPortal;User Id=sa;Password=YourSecurePassword123!;TrustServerCertificate=true;
+2. **Copy appsettings template:**
+   ```powershell
+   Copy-Item StrengthPortal.Api\appsettings.Development.json.template StrengthPortal.Api\appsettings.Development.json
    ```
 
-3. **Never commit the `.env` file** - it's already in `.gitignore`
+3. **Edit both files with your secure passwords:**
+   - In `.env`: Change `SA_PASSWORD=YourStrong!Passw0rd_CHANGE_ME`
+   - In `appsettings.Development.json`: Change `YOUR_PASSWORD_HERE`
+   - **Use the same password in both files!**
+
+4. **Never commit these files** - they're already in `.gitignore`
 
 ## Quick Start
 
