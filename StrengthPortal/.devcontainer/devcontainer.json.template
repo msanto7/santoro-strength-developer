@@ -40,7 +40,7 @@
 						"database": "StrengthPortal",
 						"authenticationType": "SqlLogin",
 						"user": "sa",
-						"password": "strengthROOT42!",
+						"password": "CHANGE_TO_YOUR_SA_PASSWORD",
 						"emptyPasswordInput": false,
 						"savePassword": true,
 						"profileName": "StrengthPortal Dev"

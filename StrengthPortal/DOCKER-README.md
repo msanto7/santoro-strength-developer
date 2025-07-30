@@ -22,12 +22,18 @@ This document explains how to run the StrengthPortal application using Docker an
    Copy-Item StrengthPortal.Api\appsettings.Development.json.template StrengthPortal.Api\appsettings.Development.json
    ```
 
-3. **Edit both files with your secure passwords:**
+3. **Copy devcontainer template (if using dev containers):**
+   ```powershell
+   Copy-Item .devcontainer\devcontainer.json.template .devcontainer\devcontainer.json
+   ```
+
+4. **Edit all files with your secure passwords:**
    - In `.env`: Change `SA_PASSWORD=YourStrong!Passw0rd_CHANGE_ME`
    - In `appsettings.Development.json`: Change `YOUR_PASSWORD_HERE`
-   - **Use the same password in both files!**
+   - In `devcontainer.json`: Change `CHANGE_TO_YOUR_SA_PASSWORD`
+   - **Use the same password in all files!**
 
-4. **Never commit these files** - they're already in `.gitignore`
+5. **Never commit these files** - they're already in `.gitignore`
 
 ## Quick Start
 

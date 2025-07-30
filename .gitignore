@@ -21,6 +21,9 @@ obj/
 **/appsettings.Local.json
 **/appsettings.*.local.json
 
+# Dev container files with passwords
+**/.devcontainer/devcontainer.json
+
 # Docker
 **/docker-compose.override.yml.local
 **/.dockerignore.local
