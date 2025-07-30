@@ -10,3 +10,28 @@ obj/
 *.suo
 /StrengthPortal/StrengthPortal.Database/StrengthPortal.Database.dbmdl
 /StrengthPortal/StrengthPortal.Database/StrengthPortal.Database.jfm
+
+# Environment files (contain sensitive information)
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Configuration files with secrets
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings.*.local.json
+
+# Dev container files with passwords
+**/.devcontainer/devcontainer.json
+
+# Docker
+**/docker-compose.override.yml.local
+**/.dockerignore.local
+
+# IDE
+**/.vscode/settings.json
+**/.idea/
+
+# Logs
+**/logs/
+**/*.log
