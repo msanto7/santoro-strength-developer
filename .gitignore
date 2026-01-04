@@ -35,3 +35,4 @@ obj/
 # Logs
 **/logs/
 **/*.log
+/StrengthPortal/StrengthPortal.IdentityDatabase/StrengthPortal.IdentityDatabase.jfm
