@@ -12,6 +12,10 @@
 *.userosscache
 *.sln.docstates
 
+# SQL Project build artifacts
+*.dbmdl
+*.jfm
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

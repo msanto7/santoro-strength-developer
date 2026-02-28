@@ -1,0 +1,18 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="StrengthPortal.Api/StrengthPortal.Api.csproj" />
+  <Project Path="StrengthPortal.Database/StrengthPortal.Database.sqlproj">
+    <Build Solution="*|Any CPU" />
+    <Deploy Solution="*|Any CPU" />
+  </Project>
+  <Project Path="StrengthPortal.Identity/StrengthPortal.Identity.csproj" />
+  <Project Path="StrengthPortal.IdentityDatabase/StrengthPortal.IdentityDatabase.sqlproj">
+    <Platform Project="AnyCPU" />
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
