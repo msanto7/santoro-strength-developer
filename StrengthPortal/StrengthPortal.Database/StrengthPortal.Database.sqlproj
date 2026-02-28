@@ -1,7 +1,10 @@
 ﻿<Project Sdk="Microsoft.Build.Sql/2.1.0">
   <PropertyGroup>
     <Name>StrengthPortal.Database</Name>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql170DatabaseSchemaProvider</DSP>
     <ModelCollation>1033, CI</ModelCollation>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <ProjectGuid>{61b5043e-aef1-44f9-9655-7b514bdd605f}</ProjectGuid>
   </PropertyGroup>
 </Project>

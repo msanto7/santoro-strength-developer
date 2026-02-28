@@ -11,6 +11,7 @@
 *.suo
 *.userosscache
 *.sln.docstates
+*.sln
 
 # SQL Project build artifacts
 *.dbmdl

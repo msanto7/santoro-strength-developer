@@ -5,12 +5,12 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="StrengthPortal.Api/StrengthPortal.Api.csproj" />
-  <Project Path="StrengthPortal.Database/StrengthPortal.Database.sqlproj">
+  <Project Path="StrengthPortal.Database/StrengthPortal.Database.sqlproj" Id="61b5043e-aef1-44f9-9655-7b514bdd605f">
     <Build Solution="*|Any CPU" />
     <Deploy Solution="*|Any CPU" />
   </Project>
   <Project Path="StrengthPortal.Identity/StrengthPortal.Identity.csproj" />
-  <Project Path="StrengthPortal.IdentityDatabase/StrengthPortal.IdentityDatabase.sqlproj">
+  <Project Path="StrengthPortal.IdentityDatabase/StrengthPortal.IdentityDatabase.sqlproj" Id="2157b76b-9ad1-4c4b-9025-f779e1e39f68">
     <Platform Project="AnyCPU" />
     <Build />
     <Deploy />
