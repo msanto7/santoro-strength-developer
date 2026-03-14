@@ -1,4 +1,4 @@
-﻿namespace StrengthPortal.Identity.Application.Abstractions;
+namespace StrengthPortal.Api.Application.Abstractions;
 
 public interface ITokenService
 {

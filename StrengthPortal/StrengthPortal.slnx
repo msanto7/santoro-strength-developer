@@ -9,10 +9,4 @@
     <Build Solution="*|Any CPU" />
     <Deploy Solution="*|Any CPU" />
   </Project>
-  <Project Path="StrengthPortal.Identity/StrengthPortal.Identity.csproj" />
-  <Project Path="StrengthPortal.IdentityDatabase/StrengthPortal.IdentityDatabase.sqlproj" Id="2157b76b-9ad1-4c4b-9025-f779e1e39f68">
-    <Platform Project="AnyCPU" />
-    <Build />
-    <Deploy />
-  </Project>
 </Solution>

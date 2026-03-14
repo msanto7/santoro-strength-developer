@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using StrengthPortal.Identity.Application.Abstractions;
+using Microsoft.AspNetCore.Mvc;
+using StrengthPortal.Api.Application.Abstractions;
 
-namespace StrengthPortal.Identity.Controllers;
+namespace StrengthPortal.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

@@ -1,10 +1,10 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using StrengthPortal.Identity.Application.Abstractions;
+using Microsoft.IdentityModel.Tokens;
+using StrengthPortal.Api.Application.Abstractions;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace StrengthPortal.Identity.Infrastructure.Authentication;
+namespace StrengthPortal.Api.Infrastructure.Authentication;
 
 public sealed class JwtTokenService(IConfiguration configuration) : ITokenService
 {
